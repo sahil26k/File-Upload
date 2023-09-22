@@ -5,7 +5,10 @@ const { MongoClient, GridFSBucket } = require('mongodb');
 const app = express();
 
 app.use(cors());
-
+app.get("/",(req,res) =>{
+  res.setHeader("Access-control-Allow-Credentials","true");
+  res.send("api is running")
+})
 const storage = multer.memoryStorage();
 const upload = multer({ storage });
 app.use(express.json());
