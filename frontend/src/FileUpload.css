@@ -1,0 +1,64 @@
+.heading{
+    text-align: center;
+    margin-top: 50px;
+}
+.dropzone {
+    border: 2px dashed #cccccc;
+    border-radius: 4px;
+    padding: 20px;
+    text-align: center;
+    height: 100px;
+    cursor: pointer;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  
+  .dropzone p {
+    margin: 0;
+  }
+.button1{
+    margin-top: 20px;
+}
+  
+.table-wrap {
+    max-width: 1000px;
+    margin: 80px auto;
+    overflow-x: auto;
+    padding: 0px 16px;
+}
+
+table, td, th {
+    text-align: left;
+    font-size: 18px;
+}
+
+td {
+    font-size: 15px;
+}
+
+table thead tr {
+    background-color: #071665;
+    color: #fff;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    border-radius: 16px 16px 0px 0px;
+    overflow: hidden;
+}
+
+table tbody tr td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 15px;
+    white-space: nowrap;
+}
+
+table tbody tr:nth-child(odd) {
+    background: #b4b4b442;
+    color: #000;
+    font-weight: 500;
+}
