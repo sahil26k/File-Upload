@@ -16,7 +16,7 @@ function FileUpload() {
 
   const loadSavedFilesData = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/saved-files');
+      const response = await axios.get('https://file-upload-api-zeta.vercel.app/saved-files');
       setSavedFilesData(response.data);
     } catch (error) {
       console.error('Error fetching saved files data:', error);
@@ -40,7 +40,7 @@ function FileUpload() {
     formData.append('files', file);
 
     try {
-      const response = await axios.post('http://localhost:5000/upload', formData, {
+      const response = await axios.post('https://file-upload-api-zeta.vercel.app/upload', formData, {
         headers: { 'Content-Type': 'multipart/form-data' },
       });
 
@@ -66,7 +66,7 @@ function FileUpload() {
 
   const handleDownloadFile = async (filename) => {
     try {
-      const response = await axios.get(`http://localhost:5000/download/${filename}`, {
+      const response = await axios.get(`https://file-upload-api-zeta.vercel.app/download/${filename}`, {
         responseType: 'blob',
       });
 
